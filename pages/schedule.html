@@ -1,23 +1,74 @@
 ---
 layout: default
 title: Schedule
+css: schedule.css
 ---
 <div>
-	<table style="width:100%">
-	  <tr>
-	    <th>Firstname</th>
-	    <th>Lastname</th>
-	    <th>Age</th>
-	  </tr>
-	  <tr>
-	    <td>Jill</td>
-	    <td>Smith</td>
-	    <td>50</td>
-	  </tr>
-	  <tr>
-	    <td>Eve</td>
-	    <td>Jackson</td>
-	    <td>94</td>
-	  </tr>
-	</table>
+  <table class="table">
+    <!-- Header Row -->
+    <tr>
+      <th class="date-cell">Date</th>
+      <!-- Lecture -->
+      <th class="lectures-header">Lecture</th>
+      <th class="lectures-header">Reading</th>
+      <th class="lectures-header">Feedback</th>
+      <!-- PROJECT -->
+      <th colspan="3" scope="colgroup" class="projects-header">Projects</th>
+      <!-- PSET -->
+      <th colspan="3" scope="colgroup" class="pset-header">Problem Sets</th>
+    </tr>
+    <tr>
+      <th class="date-cell"></th>
+      <!-- Lecture -->
+      <th class="lectures-header"></th>
+      <th class="lectures-header"></th>
+      <th class="lectures-header"></th>
+      <!-- PROJECT -->
+      <th class="projects-header">Title</th>
+      <th class="projects-header">Out</th>
+      <th class="projects-header">Due</th>
+      <!-- PSET -->
+      <th class="pset-header">Title</th>
+      <th class="pset-header">Out</th>
+      <th class="pset-header">Due</th>
+    </tr>
+
+    <!-- Content Row -->
+    <tr>
+      <td class="date-cell">1/27 (Mon)</td>
+      <td>Introduction</td>
+      <td>NE 1.1-1.5</td>
+      <td><a href="">Link</a></td>
+      <td>Project 0: Python Intro</td>
+      <td>1/27 (Mon)</td>
+      <td>1/29 (Wed)</td>
+      <td>Pset 0: Ethology</td>
+      <td>1/27 (Mon)</td>
+      <td>1/29 (Wed)</td>
+    </tr>
+    <tr>
+      <td class="date-cell">1/29 (Wed)</td>
+      <td>Introduction</td>
+      <td>NE 1.1-1.5</td>
+      <td><a href="">Link</a></td>
+      <td>Project 0: Python Intro</td>
+      <td>1/27 (Mon)</td>
+      <td>1/29 (Wed)</td>
+      <td>Pset 0: Ethology</td>
+      <td>1/27 (Mon)</td>
+      <td>1/29 (Wed)</td>
+    </tr>
+    <tr>
+      <td class="date-cell">2/3 &nbsp&nbsp(Mon)</td>
+      <td>Introduction</td>
+      <td>NE 1.1-1.5</td>
+      <td><a href="">Link</a></td>
+      <td>Project 0: Python Intro</td>
+      <td>1/27 (Mon)</td>
+      <td>1/29 (Wed)</td>
+      <td>Pset 0: Ethology</td>
+      <td>1/27 (Mon)</td>
+      <td>1/29 (Wed)</td>
+    </tr>
+  </table>
 </div>

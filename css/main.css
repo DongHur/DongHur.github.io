@@ -3,7 +3,12 @@
 }
 
 .main-container {
-    text-align: center; }
+    text-align: center; 
+}
+#main-container{
+    width:80%;
+    margin:auto;
+}
 
 .main {
     max-width: 60em;
