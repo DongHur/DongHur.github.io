@@ -1,0 +1,49 @@
+---
+layout: default
+title: files
+css: files.css
+js: files.js
+---
+<div>
+  <ul id="your-list">
+    <li><a data-toggle="collapse" href="#collapseLectures">Lectures</a></li>
+    <ul class="collapse" id="collapseLectures">
+      {% for item in (1..11) %}
+        <li><a href="{{ site.baseurl }}/files/lectures/lecture{{item}}.pdf">Lecture {{ item }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <li><a data-toggle="collapse" href="#collapseSections">Sections</a></li>
+    <ul class="collapse" id="collapseSections">
+      {% for item in (1..11) %}
+        <li><a href="{{ site.baseurl }}/files/sections/section{{item}}.pdf">Section {{ item }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <li><a data-toggle="collapse" href="#collapseProjects">Projects</a></li>
+    <ul class="collapse" id="collapseProjects">
+      {% for item in (1..11) %}
+        <li><a href="{{ site.baseurl }}/files/projects/project {{item}}.ipynb">Project {{ item }}</a></li>
+      {% endfor %}
+    </ul>
+    
+    <li><a data-toggle="collapse" href="#collapsePsets">Psets</a></li>
+    <ul class="collapse" id="collapsePsets">
+      {% for item in (1..11) %}
+        <li><a href="{{ site.baseurl }}/files/psets/pset{{item}}.pdf">Pset {{ item }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <li><a data-toggle="collapse" href="#collapsePapers">Papers</a></li>
+    <ul class="collapse" id="collapsePapers">
+      {% for item in (1..11) %}
+        <li><a href="{{ site.baseurl }}/files/papers/paper{{item}}.pdf">Paper {{ item }}</a></li>
+      {% endfor %}
+    </ul>
+    
+    <li><a data-toggle="collapse" href="#collapseMisc">Misc</a></li>
+    <ul class="collapse" id="collapseMisc">
+      <li><a href="{{ site.baseurl }}/files/misc/GettingStartedWithPython.pdf">Getting Started with Python</a></li>
+    </ul>
+  </ul>
+</div>
