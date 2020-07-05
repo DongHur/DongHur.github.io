@@ -1,0 +1,107 @@
+body{
+  font-family: Roboto Slab,Helvetica,Arial,sans-serif;
+  background-color: #2E3538;
+  color: #bbb;
+}
+
+/* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 25%;
+  min-width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 130px;
+  text-align: center;
+  background: url("../img/Background-image.jpg") no-repeat center;
+  background-size:cover;
+  box-shadow: 7px 0px 20px 20px #272d2f;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: Roboto Slab,Helvetica,Arial,sans-serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #666;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav-link{
+  margin: 20px 0px;
+}
+
+/* Page content */
+#main {
+  margin-left: 25%; /* Same as the width of the sidenav */
+  padding: 50px;
+  max-width: 1060px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+hr{
+  border-top: 1px solid #666;
+  width: 85%;
+}
+h1{
+  color: white;
+}
+p{
+  font-size: 15px;
+}
+
+.center{
+  text-align: center;
+}
+
+.icon a{
+  display: inline;
+  font-size: 25px;
+}
+.icon a:hover{
+  color: #666;
+}
+
+.logo-img{
+  background: url("../img/logo.png") no-repeat center;
+  background-size:cover;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  cursor: pointer;
+}
+.logo-img:hover{
+  background: url("../img/logo-hover.png") no-repeat center;
+  background-size:cover;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  cursor: pointer;
+}
+
