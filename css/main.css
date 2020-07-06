@@ -1,7 +1,7 @@
 body{
   font-family: Roboto Slab,Helvetica,Arial,sans-serif;
-  background-color: #2E3538;
-  color: #bbb;
+  background-color: #0F121B;
+  color: #bbb;  
 }
 
 /* The sidenav */
@@ -19,10 +19,8 @@ body{
   text-align: center;
   background: url("../img/Background-image.jpg") no-repeat center;
   background-size:cover;
-  box-shadow: 7px 0px 20px 20px #272d2f;
+  box-shadow: -8px 0px 20px 20px black;
 }
-
-
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 8px;
@@ -33,12 +31,10 @@ body{
   transition: 0.3s;
   font-family: Roboto Slab,Helvetica,Arial,sans-serif;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #666;
 }
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -70,10 +66,14 @@ hr{
   width: 85%;
 }
 h1{
+  font-size: 70px;
   color: white;
 }
-p{
-  font-size: 15px;
+h3{
+  color: white;
+}
+footer{
+  text-align: center;
 }
 
 .center{
@@ -87,6 +87,12 @@ p{
 .icon a:hover{
   color: #666;
 }
+.icon i{
+  transition: transform 0.5s;
+}
+.icon i:hover{
+  transform: translate(0px, -10px);
+}
 
 .logo-img{
   background: url("../img/logo.png") no-repeat center;
@@ -95,6 +101,7 @@ p{
   height: 70px;
   margin: auto;
   cursor: pointer;
+  transition: transform 1s ease;
 }
 .logo-img:hover{
   background: url("../img/logo-hover.png") no-repeat center;
@@ -103,5 +110,23 @@ p{
   height: 70px;
   margin: auto;
   cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.info-container{
+  line-height: 2;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#profile-pic{
+  margin: auto;
+}
+#profile-pic img{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
